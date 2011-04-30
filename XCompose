@@ -1,0 +1,761 @@
+# Author: o_O Tync, ICQ#1227-700, JID: ootync{a}gmail.com
+
+# UTF-8 (Unicode) compose sequence
+# See '/usr/share/X11/locale/en_US.UTF-8/Compose' for examples
+
+## Format:
+# <keyname1> <keyname2> ... : "string" U-CODE   # COMMENT
+# Keyname can be a code <U1100> or any of the below:
+
+## Find their names using `xev` output
+# KEY-RESULT                            KEYNAME
+# `                                     <grave>
+# '                                     <apostrophe>
+# "                                     <quotedbl>
+# ~                                     <asciitilde>
+# !                                     <exclam>
+# ?                                     <question>
+# @                                     <at>
+# #                                     <numbersign>
+# $                                     <dollar>
+# %                                     <percent>
+# ^                                     <asciicircum>
+# &                                     <ampersand>
+# *                                     <asterisk>
+# (                                     <parenleft>
+# )                                     <parenright>
+# [                                     <bracketleft>
+# ]                                     <bracketright>
+# {                                     <braceleft>
+# }                                     <braceright>
+# -                                     <minus>
+# +                                     <plus>
+# =                                     <equal>
+# _                                     <underscore>
+# <                                     <less>
+# >                                     <greater>
+# \                                     <backslash>
+# /                                     <slash>
+# |                                     <bar>
+# ,                                     <comma>
+# .                                     <period>
+# :                                     <colon>
+# ;                                     <semicolon>
+# a-z,A-Z,0-9                           <a>-<z>,<A>-<Z>,<0>-<9>
+# NumPad 0-9                            <KP_0>-<KP_9>
+# NumPad +                              <KP_Add>
+# NumPad -                              <KP_Subtract>
+# NumPad *                              <KP_Multiply>
+# NumPad /                              <KP_Divide>
+# NumPad .                              <KP_Decimal>
+
+# ARROW KEYS: ←→↑↓                      <Left> <Right> <Up> <Down>
+
+## Russian letters:
+# Cyrillic_a, Cyrillic_be, Cyrillic_ve, Cyrillic_ghe, Cyrillic_de, Cyrillic_ie, Cyrillic_io, Cyrillic_zhe, Cyrillic_ze, Cyrillic_i, Cyrillic_shorti, Cyrillic_ka, Cyrillic_el, Cyrillic_em, Cyrillic_en, Cyrillic_o, Cyrillic_pe, Cyrillic_er, Cyrillic_es, Cyrillic_te, Cyrillic_u, Cyrillic_ef, Cyrillic_ha, Cyrillic_tse, Cyrillic_che, Cyrillic_sha, Cyrillic_shcha, Cyrillic_hardsign, Cyrillic_yeru, Cyrillic_softsign, Cyrillic_e, Cyrillic_yu, Cyrillic_ya
+# Cyrillic_A, Cyrillic_BE, Cyrillic_VE, Cyrillic_GHE, Cyrillic_DE, Cyrillic_IE, Cyrillic_IO, Cyrillic_ZHE, Cyrillic_ZE, Cyrillic_I, Cyrillic_SHORTI, Cyrillic_KA, Cyrillic_EL, Cyrillic_EM, Cyrillic_EN, Cyrillic_O, Cyrillic_PE, Cyrillic_ER, Cyrillic_ES, Cyrillic_TE, Cyrillic_U, Cyrillic_EF, Cyrillic_HA, Cyrillic_TSE, Cyrillic_CHE, Cyrillic_SHA, Cyrillic_SHCHA, Cyrillic_HARDSIGN, Cyrillic_YERU, Cyrillic_SOFTSIGN, Cyrillic_E, Cyrillic_YU, Cyrillic_YA
+
+
+#====================[   MY KEYS   ]====================#
+
+#====== Common symbols
+<Multi_key> <equal> <0>                                 : "✘"   U2718 # HEAVY BALLOT X
+<Multi_key> <equal> <1>                                 : "✔"   U2714 # HEAVY CHECK MARK
+
+<Multi_key> <equal> <o>                                 : "•"   U2022 # BULLET
+<Multi_key> <equal> <greater>                           : "‣"   U2023 # TRIANGULAR BULLET
+<Multi_key> <equal> <asterisk>                          : "★"   U2605 # BLACK STAR
+
+<Multi_key> <O> <C>                                     : "©"   U00A9 # COPYRIGHT SIGN
+<Multi_key> <O> <R>                                     : "®"   U00AE # REGISTERED SIGN
+<Multi_key> <T> <M>                                     : "™"   U2122 # TRADE MARK SIGN
+
+<Multi_key> <o> <x>                                     : "¤"   U00A4 # CURRENCY SIGN
+<Multi_key> <e> <equal>                                 : "€"   U20AC # EURO SIGN
+<Multi_key> <slash> <c>                                 : "¢"   U00A2 # CENT SIGN
+
+<Multi_key> <percent> <percent>                         : "‰"   U2030 # PER MILLE SIGN
+<Multi_key> <o> <o>                                     : "°"   U00B0 # DEGREE SIGN
+<Multi_key> <o> <C>                                     : "℃"   U2103 # DEGREE CELSIUS
+<Multi_key> <o> <F>                                     : "℉"   U2109 # DEGREE FARENHEIT
+
+<Multi_key> <s> <s>                                     : "§"   U00A7 # SECTION SIGN
+<Multi_key> <less> <less>                               : "«"   U00AB # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <greater> <greater>                         : "»"   U00BB # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <less> <greater>                            : "«»"        # LEFT-RIGHT PAIR OF POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <period> <period> <period>                  : "…"   U2026 # HORIZONTAL ELLIPSIS
+
+<Multi_key> <minus> <minus> <period>                    : "–"   U2013 # EN DASH: for numbers: 1–2
+<Multi_key> <minus> <minus> <minus>                     : "—"   U2014 # EM DASH: for text: "What?" — he said.
+
+<Multi_key> <tab> <tab>                                 : " "   U0009 # HORIZONTAL TABULATION
+
+#====== Smileys & Co
+<Multi_key> <less> <3>                                  : "♥"   U2665 # BLACK HEART SUIT
+<Multi_key> <O> <numbersign>                            : "✆"   U2706 # TELEPHONE LOCATION SIGN
+<Multi_key> <numbersign> <numbersign>                   : "☎"   U260E # BLACK TELEPHONE
+
+#====== Modifying symbols
+<Multi_key> <backslash> <Left>                          : ""    U0202E # RightLeftOverride: TEXT REVERSAL! :)
+<Multi_key> <backslash> <Right>                         : "‭"  U0202D # LeftRightOverride: Back to normal
+
+#====== Combining Diacritical Marks: [ \ ↑ punctuation ], [ \ punctuation ], [ \ ↓ punctuation ],
+# ABOVE
+<Multi_key> <backslash> <Up> <grave>                    : "̀"    U0340 # GRAVE TONE: ̀
+<Multi_key> <backslash> <Up> <apostrophe>               : "́"    U0341 # ACUTE TONE: ́
+<Multi_key> <backslash> <Up> <asciicircum>              : "̂"    U0302 # CIRCUMFLEX: ̂
+<Multi_key> <backslash> <Up> <o>                        : "̊"    U030A # CIRCLE: ̊
+<Multi_key> <backslash> <Up> <asterisk>                 : "⃰"    U20F0 # ASTERISK: ⃰
+<Multi_key> <backslash> <Up> <asciitilde>               : "̃"    U0303 # TILDE: ̃
+<Multi_key> <backslash> <Up> <Right>                    : "⃗"    U20D7 # VECTOR: ⃗
+<Multi_key> <backslash> <Up> <minus>                    : "̅"    U0305 # OVERLINE: ̅
+<Multi_key> <backslash> <Up> <2> <minus>                : "̿"    U033F # 2xOVERLINE: ̿
+<Multi_key> <backslash> <Up> <u>                        : "̆"    U0306 # BREVE: ̆
+<Multi_key> <backslash> <Up> <period>                   : "̇"    U0307 # DOT: ̇
+<Multi_key> <backslash> <Up> <2> <period>               : "̈"    U0308 # 2xDOT: ̈
+<Multi_key> <backslash> <Up> <3> <period>               : "⃛"    U20DB # 3xDOT: ⃛
+<Multi_key> <backslash> <Up> <4> <period>               : "⃜"    U20DC # 4xDOT: ⃜
+# MIDDLE
+<Multi_key> <backslash> <minus>                         : "̶"    U0336 # STROKE (STRIKE): ̶
+<Multi_key> <backslash> <slash>                         : "̸"    U0338 # OVERLAY (MISTAKE):  ̸
+<Multi_key> <backslash> <2> <slash>                     : "⃫"    U20EB # DOUBLE OVERLAY (MISTAKE):  ⃫
+# BELOW
+<Multi_key> <backslash> <Down> <asciitilde>             : "̰"    U0330 # TILDE: ̰
+<Multi_key> <backslash> <Down> <minus>                  : "̲"    U0332 # UNDERLINE: ̲
+<Multi_key> <backslash> <Down> <2> <minus>              : "̳"    U0333 # 2xUNDERLINE: ̳
+<Multi_key> <backslash> <Down> <Up>                     : "͎"    U034E # POINTING ARROW: ͎
+
+#====== Pointing hands: [ H arrow ], [ h arrow ]
+<Multi_key> <H> <Left>                                  : "☚"   U261A # BLACK LEFT POINTING INDEX
+<Multi_key> <H> <Right>                                 : "☛"   U261B # BLACK RIGHT POINTING INDEX
+<Multi_key> <h> <Left>                                  : "☜"   U261C # WHITE LEFT POINTING INDEX
+<Multi_key> <h> <Up>                                    : "☝"   U261D # WHITE UP POINTING INDEX
+<Multi_key> <h> <Right>                                 : "☞"   U261E # WHITE RIGHT POINTING INDEX
+<Multi_key> <h> <Down>                                  : "☟"   U261F # WHITE DOWN POINTING INDEX
+<Multi_key> <h> <v>                                     : "✌"   U270C # VICTORY HAND
+
+#====== Single arrows: [ - arrow arrow ]
+<Multi_key> <minus> <Right> <Right>                     : "→"
+<Multi_key> <minus> <Left> <Left>                       : "←"
+<Multi_key> <minus> <Up> <Up>                           : "↑"
+<Multi_key> <minus> <Down> <Down>                       : "↓"
+
+<Multi_key> <minus> <Left> <Right>                      : "↔"
+<Multi_key> <minus> <Up> <Down>                         : "↕"
+
+<Multi_key> <minus> <slash> <Left> <Left>               : "↚"
+<Multi_key> <minus> <slash> <Right> <Right>             : "↛"
+<Multi_key> <minus> <slash> <Left> <Right>              : "↮"
+
+<Multi_key> <minus> <Left> <Up>                         : "↖"
+<Multi_key> <minus> <Left> <Down>                       : "↙"
+<Multi_key> <minus> <Up> <Right>                        : "↗"
+<Multi_key> <minus> <Down> <Right>                      : "↘"
+
+#====== Paired arrows: [ - arrow - arrow ]
+<Multi_key> <minus> <Right> <minus> <Right>             : "⇉"
+<Multi_key> <minus> <Left>  <minus> <Left>              : "⇇"
+<Multi_key> <minus> <Up>    <minus> <Up>                : "⇈"
+<Multi_key> <minus> <Down>  <minus> <Down>              : "⇊"
+
+<Multi_key> <minus> <Right> <minus> <Left>              : "⇄"
+<Multi_key> <minus> <Left>  <minus> <Right>             : "⇆"
+<Multi_key> <minus> <Up>    <minus> <Down>              : "⇅"
+<Multi_key> <minus> <Down>  <minus> <Up>                : "⇵"
+
+#====== Double arrows: [ = arrow arrow ]
+<Multi_key> <equal> <Right> <Right>                     : "⇒"
+<Multi_key> <equal> <Left> <Left>                       : "⇐"
+<Multi_key> <equal> <Up> <Up>                           : "⇑"
+<Multi_key> <equal> <Down> <Down>                       : "⇓"
+
+<Multi_key> <equal> <Left> <Right>                      : "⇔"
+<Multi_key> <equal> <Up> <Down>                         : "⇕"
+
+<Multi_key> <equal> <slash> <Left> <Left>               : "⇍"
+<Multi_key> <equal> <slash> <Right> <Right>             : "⇏"
+<Multi_key> <equal> <slash> <Left> <Right>              : "⇎"
+
+<Multi_key> <equal> <Left> <Up>                         : "⇖"
+<Multi_key> <equal> <Left> <Down>                       : "⇙"
+<Multi_key> <equal> <Up> <Right>                        : "⇗"
+<Multi_key> <equal> <Down> <Right>                      : "⇘"
+
+#====== Big black arrows: [ # arrow arrow ]
+<Multi_key> <numbersign> <Right> <Right>                : "➡"   U27A1 # BLACK RIGHTWARDS ARROW # THERE'S NO RIGHT-ARROW WITH SAME STYLE!!!
+<Multi_key> <numbersign> <Left> <Left>                  : "⬅"   U2B05 # LEFTWARDS BLACK ARROW
+<Multi_key> <numbersign> <Up> <Up>                      : "⬆"   U2B06 # UPWARDS BLACK ARROW
+<Multi_key> <numbersign> <Down> <Down>                  : "⬇"   U2B07 # DOWNWARDS BLACK ARROW
+
+<Multi_key> <numbersign> <Left> <Right>                 : "⬌"   U2B0C # LEFT RIGHT BLACK ARROW
+<Multi_key> <numbersign> <Up> <Down>                    : "⬍"   U2B0D # UP DOWN BLACK ARROW
+
+<Multi_key> <numbersign> <Left> <Up>                    : "⬉"   U2B09 # NORTH WEST BLACK ARROW
+<Multi_key> <numbersign> <Left> <Down>                  : "⬋"   U2B0B # SOUTH WEST BLACK ARROW
+<Multi_key> <numbersign> <Up> <Right>                   : "⬈"   U2B08 # NORTH EAST BLACK ARROW
+<Multi_key> <numbersign> <Down> <Right>                 : "⬊"   U2B0A # SOUTH EAST BLACK ARROW
+
+#====== Rotating arrows: [ - c arrow ]
+<Multi_key> <minus> <c> <Left>                          : "⟲"   U27F2 # ANTICLOCKWISE GAPPED CIRCLE ARROW
+<Multi_key> <minus> <c> <Right>                         : "⟳"   U27F3 # CLOCKWISE GAPPED CIRCLE ARROW
+
+#====== Long single arrows: [ - - arrow arrow ], [ | - - arrow arrow ]
+<Multi_key> <minus> <minus> <Left> <Left>               : "⟵"   U27F5 # LONG LEFTWARDS ARROW
+<Multi_key> <minus> <minus> <Right> <Right>             : "⟶"   U27F6 # LONG RIGHTWARDS ARROW
+<Multi_key> <minus> <minus> <Left> <Right>              : "⟷"   U27F7 # LONG LEFT RIGHT ARROW
+
+<Multi_key> <bar> <minus> <minus> <Left> <Left>         : "⟻"   U27FB # LONG LEFTWARDS ARROW FROM BAR
+<Multi_key> <bar> <minus> <minus> <Right> <Right>       : "⟼"   U27FC # LONG RIGHTWARDS ARROW FROM BAR
+
+#====== Long double arrows: [ = = arrow arrow ], [ | = = arrow arrow ]
+<Multi_key> <equal> <equal> <Left> <Left>               : "⟸"   U27F8 # LONG LEFTWARDS DOUBLE ARROW
+<Multi_key> <equal> <equal> <Right> <Right>             : "⟹"   U27F9 # LONG RIGHTWARDS DOUBLE ARROW
+<Multi_key> <equal> <equal> <Left> <Right>              : "⟺"   U27FA # LONG LEFT RIGHT DOUBLE ARROW
+
+<Multi_key> <bar> <equal> <equal> <Left> <Left>         : "⟽"   U27FD # LONG LEFTWARDS DOUBLE ARROW FROM BAR
+<Multi_key> <bar> <equal> <equal> <Right> <Right>       : "⟾"   U27FE # LONG RIGHTWARDS DOUBLE ARROW FROM BAR
+
+#====== Brackets, Braces: [ Left <([ ], [ Right >)] ]
+<Multi_key> <Left> <bar> <bar>                          : "‖"   U2016 # DOUBLE VERTICAL LINE
+<Multi_key> <Right> <bar> <bar>                         : "‖"   U2016 # DOUBLE VERTICAL LINE
+
+<Multi_key> <Left> <less>                               : "⟨"   U27E8 # MATHEMATICAL LEFT ANGLE BRACKET
+<Multi_key> <Right> <greater>                           : "⟩"   U27E9 # MATHEMATICAL RIGHT ANGLE BRACKET
+
+#====== Heavy Brackets, Braces: [ Left Down <([ ], [ Right Down >)] ]
+<Multi_key> <Left> <Down> <parenleft>                   : "❪"   U276A # MEDIUM FLATTENED LEFT PARENTHESIS ORNAMENT
+<Multi_key> <Right> <Down> <parenright>                 : "❫"   U276B # MEDIUM FLATTENED RIGHT PARENTHESIS ORNAMENT
+
+<Multi_key> <Left> <Down> <less>                        : "❬"   U276C # MEDIUM LEFT-POINTING ANGLE BRACKET ORNAMENT
+<Multi_key> <Right> <Down> <greater>                    : "❭"   U276D # MEDIUM RIGHT-POINTING ANGLE BRACKET ORNAMENT
+
+<Multi_key> <Left> <Down> <braceleft>                   : "❴"   U2774 # MEDIUM LEFT CURLY BRACKET ORNAMENT
+<Multi_key> <Right> <Down> <braceright>                 : "❵"   U2775 # MEDIUM RIGHT CURLY BRACKET ORNAMENT
+
+<Multi_key> <Left> <Down> <apostrophe>                  : "❛"   U275B # HEAVY SINGLE TURNED COMMA QUOTATION MARK ORNAMENT
+<Multi_key> <Right> <Down> <apostrophe>                 : "❜"   U275C # HEAVY SINGLE COMMA QUOTATION MARK ORNAMENT
+
+<Multi_key> <Left> <Down> <quotedbl>                    : "❝"   U275D # HEAVY DOUBLE TURNED COMMA QUOTATION MARK ORNAMENT
+<Multi_key> <Right> <Down> <quotedbl>                   : "❞"   U275E # HEAVY DOUBLE COMMA QUOTATION MARK ORNAMENT
+
+#====== Arithmetic Operators
+<Multi_key> <period> <asterisk>                         : "·"   U00B7 # MIDDLE DOT
+
+<Multi_key> <plus> <minus>                              : "±"   U00B1 # PLUS-MINUS SIGN
+<Multi_key> <minus> <plus>                              : "∓"   U2213 # MINUS-OR-PLUS SIGN
+
+<Multi_key> <O> <plus>                                  : "⊕"   U2295 # CIRCLED PLUS
+<Multi_key> <O> <minus>                                 : "⊖"   U2296 # CIRCLED MINUS
+<Multi_key> <O> <asterisk>                              : "⊗"   U2297 # CIRCLED TIMES
+<Multi_key> <O> <slash>                                 : "⊘"   U2298 # CIRCLED DIVISION SLASH
+<Multi_key> <O> <equal>                                 : "⊜"   U229B # CIRCLED ASTERISK OPERATOR
+
+<Multi_key> <colon> <equal>                             : "≔"   U2254 # COLON EQUALS
+<Multi_key> <equal> <colon>                             : "≕"   U2255 # EQUALS COLON
+<Multi_key> <equal> <d> <e> <f>                         : "≝"   U225D # EQUAL TO BY DEFINITION
+<Multi_key> <equal> <question>                          : "≟"   U225F # QUESTIONED EQUAL TO
+
+<Multi_key> <less> <equal>                              : "≤"   U2264 # LESS-THAN OR EQUAL
+<Multi_key> <greater> <equal>                           : "≥"   U2265 # GREATER-THAN OR EQUAL
+<Multi_key> <equal> <equal> <equal>                     : "≡"   U2261 # IDENTICAL TO
+
+<Multi_key> <slash> <equal>                             : "≠"   U2260 # NOT EQUAL TO
+<Multi_key> <exclam> <equal>                            : "≠"   U2260 # NOT EQUAL TO
+<Multi_key> <slash> <less>                              : "≮"   U226E # NOT LESS-THAN
+<Multi_key> <slash> <greater>                           : "≯"   U226F # NOT GREATER-THAN
+
+<Multi_key> <asciitilde>                                : "∼"   U223C # TILDE OPERATOR
+<Multi_key> <slash> <asciitilde>                        : "≁"   U2241 # NOT TILDE
+<Multi_key> <equal> <asciitilde>                        : "≈"   U2248 # ALMOST EQUAL TO
+<Multi_key> <equal> <slash> <asciitilde>                : "≈"   U2249 # NOT ALMOST EQUAL TO
+
+<Multi_key> <plus> <plus>                               : "∑"   U2211 # N-ARY SUMMATION
+<Multi_key> <asterisk> <asterisk>                       : "∏"   U220F # N-ARY PRODUCT
+
+<Multi_key> <Up> <slash> <2>                            : "√"   U221A # SQUARE ROOT
+<Multi_key> <Up> <slash> <3>                            : "∛"   U221B # CUBE ROOT
+<Multi_key> <Up> <slash> <4>                            : "∜"   U221C # FOURTH ROOT
+
+#====== Set Operators: [ { keys ]
+<Multi_key> <braceleft> <slash> <o>                     : "∅"   # EMPTY SET
+
+<Multi_key> <braceleft> <i> <n>                         : "∈"   # ELEMENT OF
+<Multi_key> <braceleft> <n> <i>                         : "∋"   # CONTAINS AS MEMBER
+<Multi_key> <braceleft> <slash> <i> <n>                 : "∉"   # NOT ELEMENT OF
+<Multi_key> <braceleft> <slash> <n> <i>                 : "∌"   # NOT CONTAINS AS MEMBER
+
+<Multi_key> <braceleft> <plus>                          : "∪"   # UNION
+<Multi_key> <braceleft> <minus>                         : "∖"   # MINUS
+<Multi_key> <braceleft> <asterisk>                      : "∩"   # INTERSECTION
+
+<Multi_key> <braceleft> <parenleft>                     : "⊂"   # SUBSET OF
+<Multi_key> <braceleft> <parenright>                    : "⊃"   # SUPERSET OF
+<Multi_key> <braceleft> <equal> <parenleft>             : "⊆"   # SUBSET OF OR EQUAL
+<Multi_key> <braceleft> <equal> <parenright>            : "⊇"   # SUPERSET OF OR EQUAL
+
+<Multi_key> <braceleft> <slash> <parenleft>             : "⊄"   # NOT SUBSET OF
+<Multi_key> <braceleft> <slash> <parenright>            : "⊅"   # NOT SUPERSET OF
+<Multi_key> <braceleft> <slash> <equal> <parenleft>     : "⊈"   # NOT SUBSET OF AND EQUAL
+<Multi_key> <braceleft> <slash> <equal> <parenright>    : "⊉"   # NOT SUPERSET OF AND EQUAL
+
+#====== Logical Operators
+<Multi_key> <E> <E>                                     : "∃"   # THERE EXISTS
+<Multi_key> <exclam> <E> <E>                            : "∄"   # THERE DOES NOT EXIST
+<Multi_key> <A> <A>                                     : "∀"   # FOR ALL
+<Multi_key> <less> <parenright>                         : "∢"   # LET'S SEE
+
+<Multi_key> <exclam> <exclam>                           : "¬"   # LOGICAL NOT
+<Multi_key> <ampersand> <ampersand>                     : "∧"   # LOGICAL AND
+<Multi_key> <bar> <bar>                                 : "∨"   # LOGICAL OR
+
+#====== Mathematical Operators & Symbols
+<Multi_key> <d> <f>                                     : "∂"   U2202 # PARTIAL DIFFERENTIAL
+<Multi_key> <d> <x>                                     : "∆"   U2206 # INCREMENT
+<Multi_key> <S>                                         : "∫"   U222B # INTEGRAL
+
+#====== Math Symbols
+<Multi_key> <8> <8>                                     : "∞"   # INFINITY
+<Multi_key> <C> <C>                                     : "ℂ"   # DOUBLE-STRUCK CAPITAL C (set of complex numbers)
+<Multi_key> <N> <N>                                     : "ℕ"   # DOUBLE-STRUCK CAPITAL N (natural number)
+<Multi_key> <P> <P>                                     : "ℙ"   # DOUBLE-STRUCK CAPITAL P
+<Multi_key> <Q> <Q>                                     : "ℚ"   # DOUBLE-STRUCK CAPITAL Q (set of rational numbers)
+<Multi_key> <R> <R>                                     : "ℝ"   # DOUBLE-STRUCK CAPITAL R (set of real numbers)
+<Multi_key> <Z> <Z>                                     : "ℤ"   # DOUBLE-STRUCK CAPITAL Z (set of integers)
+
+#====== Greek Letters (MathCad compatible): [ g char ] , [ g CHAR ]
+#<Multi_key> <g> <a>                    : "⍺"   # APL FUNCTIONAL SYMBOL ALPHA
+<Multi_key> <g> <a>                     : "α"   # GREEK SMALL LETTER ALPHA
+<Multi_key> <g> <b>                     : "β"   # GREEK SMALL LETTER BETA
+<Multi_key> <g> <g>                     : "γ"   # GREEK SMALL LETTER GAMMA
+<Multi_key> <g> <d>                     : "δ"   # GREEK SMALL LETTER DELTA
+<Multi_key> <g> <e>                     : "ε"   # GREEK SMALL LETTER EPSILON
+<Multi_key> <g> <z>                     : "ζ"   # GREEK SMALL LETTER ZETA
+<Multi_key> <g> <h>                     : "η"   # GREEK SMALL LETTER ΕΤΑ
+<Multi_key> <g> <q>                     : "θ"   # GREEK SMALL LETTER THETA
+<Multi_key> <g> <i>                     : "ι"   # GREEK SMALL LETTER ΙΟΤΑ
+<Multi_key> <g> <k>                     : "κ"   # GREEK SMALL LETTER KAPPA
+<Multi_key> <g> <l>                     : "λ"   # GREEK SMALL LETTER LAMBDA
+<Multi_key> <g> <m>                     : "μ"   # GREEK SMALL LETTER MU
+<Multi_key> <g> <n>                     : "ν"   # GREEK SMALL LETTER NU
+<Multi_key> <g> <x>                     : "ξ"   # GREEK SMALL LETTER XI
+<Multi_key> <g> <o>                     : "ο"   # GREEK SMALL LETTER OMICRON
+<Multi_key> <g> <p>                     : "π"   # GREEK SMALL LETTER PI
+<Multi_key> <g> <v>                     : "ϖ"   # GREEK PI SYMBOL
+<Multi_key> <g> <r>                     : "ρ"   # GREEK SMALL LETTER RHO
+#<Multi_key> <g> <>                     : "ς"   # GREEK SMALL LETTER FINAL SIGMA
+<Multi_key> <g> <s>                     : "σ"   # GREEK SMALL LETTER SIGMA
+<Multi_key> <g> <t>                     : "τ"   # GREEK SMALL LETTER TAU
+<Multi_key> <g> <u>                     : "υ"   # GREEK SMALL LETTER UPSILON
+<Multi_key> <g> <f>                     : "φ"   # GREEK SMALL LETTER PHI
+<Multi_key> <g> <j>                     : "ϕ"   # GREEK SMALL PHI SYMBOL
+<Multi_key> <g> <c>                     : "χ"   # GREEK SMALL LETTER CHI
+<Multi_key> <g> <y>                     : "ψ"   # GREEK SMALL LETTER PSI
+<Multi_key> <g> <w>                     : "ω"   # GREEK SMALL LETTER OMEGA
+
+<Multi_key> <G> <A>                     : "Α"   # GREEK CAPITAL LETTER ALPHA
+<Multi_key> <G> <B>                     : "Β"   # GREEK CAPITAL LETTER BETA
+<Multi_key> <G> <G>                     : "Γ"   # GREEK CAPITAL LETTER GAMMA
+<Multi_key> <G> <D>                     : "Δ"   # GREEK CAPITAL LETTER DELTA
+<Multi_key> <G> <E>                     : "Ε"   # GREEK CAPITAL LETTER EPSILON
+<Multi_key> <G> <Z>                     : "Ζ"   # GREEK CAPITAL LETTER ZETA
+<Multi_key> <G> <H>                     : "Η"   # GREEK CAPITAL LETTER ΕΤΑ
+<Multi_key> <G> <Q>                     : "Θ"   # GREEK CAPITAL LETTER THETA
+<Multi_key> <G> <I>                     : "Ι"   # GREEK CAPITAL LETTER ΙΟΤΑ
+<Multi_key> <G> <K>                     : "Κ"   # GREEK CAPITAL LETTER KAPPA
+<Multi_key> <G> <L>                     : "Λ"   # GREEK CAPITAL LETTER LAMBDA
+<Multi_key> <G> <M>                     : "Μ"   # GREEK CAPITAL LETTER MU
+<Multi_key> <G> <N>                     : "Ν"   # GREEK CAPITAL LETTER NU
+<Multi_key> <G> <X>                     : "Ξ"   # GREEK CAPITAL LETTER XI
+<Multi_key> <G> <O>                     : "Ο"   # GREEK CAPITAL LETTER OMICRON
+<Multi_key> <G> <P>                     : "Π"   # GREEK CAPITAL LETTER PI
+<Multi_key> <G> <V>                     : "Π"   # GREEK PI SYMBOL
+<Multi_key> <G> <R>                     : "Ρ"   # GREEK CAPITAL LETTER RHO
+#<Multi_key> <G> <>                     : "Σ"   # GREEK CAPITAL LETTER FINAL SIGMA
+<Multi_key> <G> <S>                     : "Σ"   # GREEK CAPITAL LETTER SIGMA
+<Multi_key> <G> <T>                     : "Τ"   # GREEK CAPITAL LETTER TAU
+<Multi_key> <G> <U>                     : "Υ"   # GREEK CAPITAL LETTER UPSILON
+<Multi_key> <G> <F>                     : "Φ"   # GREEK CAPITAL LETTER PHI
+<Multi_key> <G> <J>                     : "Φ"   # GREEK CAPITAL PHI SYMBOL
+<Multi_key> <G> <C>                     : "Χ"   # GREEK CAPITAL LETTER CHI
+<Multi_key> <G> <Y>                     : "Ψ"   # GREEK CAPITAL LETTER PSI
+<Multi_key> <G> <W>                     : "Ω"   # GREEK CAPITAL LETTER OMEGA
+
+
+#====== Fractions: [ number / number ]
+<Multi_key> <1> <slash> <2>             : "½"
+<Multi_key> <1> <slash> <3>             : "⅓"
+<Multi_key> <2> <slash> <3>             : "⅔"
+<Multi_key> <1> <slash> <4>             : "¼"
+<Multi_key> <3> <slash> <4>             : "¾"
+<Multi_key> <1> <slash> <5>             : "⅕"
+<Multi_key> <2> <slash> <5>             : "⅖"
+<Multi_key> <3> <slash> <5>             : "⅗"
+<Multi_key> <4> <slash> <5>             : "⅘"
+<Multi_key> <1> <slash> <6>             : "⅙"
+<Multi_key> <5> <slash> <6>             : "⅚"
+<Multi_key> <1> <slash> <8>             : "⅛"
+<Multi_key> <3> <slash> <8>             : "⅜"
+<Multi_key> <5> <slash> <8>             : "⅝"
+<Multi_key> <7> <slash> <8>             : "⅞"
+
+#====== Powers: Superscript numbers: [ ↑ number ]
+<Multi_key> <Up> <0>                    : "⁰"
+<Multi_key> <Up> <1>                    : "¹"
+<Multi_key> <Up> <2>                    : "²"
+<Multi_key> <Up> <3>                    : "³"
+<Multi_key> <Up> <4>                    : "⁴"
+<Multi_key> <Up> <5>                    : "⁵"
+<Multi_key> <Up> <6>                    : "⁶"
+<Multi_key> <Up> <7>                    : "⁷"
+<Multi_key> <Up> <8>                    : "⁸"
+<Multi_key> <Up> <9>                    : "⁹"
+<Multi_key> <Up> <plus>                 : "⁺"
+<Multi_key> <Up> <minus>                : "⁻"
+<Multi_key> <Up> <equal>                : "⁼"
+<Multi_key> <Up> <parenleft>            : "⁽"
+<Multi_key> <Up> <parenright>           : "⁾"
+<Multi_key> <Up> <i>                    : "ⁱ"
+<Multi_key> <Up> <n>                    : "ⁿ"
+
+#====== Indicies: Subscript numbers: [ ↓ number ]
+<Multi_key> <Down> <0>                  : "₀"
+<Multi_key> <Down> <1>                  : "₁"
+<Multi_key> <Down> <2>                  : "₂"
+<Multi_key> <Down> <3>                  : "₃"
+<Multi_key> <Down> <4>                  : "₄"
+<Multi_key> <Down> <5>                  : "₅"
+<Multi_key> <Down> <6>                  : "₆"
+<Multi_key> <Down> <7>                  : "₇"
+<Multi_key> <Down> <8>                  : "₈"
+<Multi_key> <Down> <9>                  : "₉"
+<Multi_key> <Down> <plus>               : "₊"
+<Multi_key> <Down> <minus>              : "₋"
+<Multi_key> <Down> <equal>              : "₌"
+<Multi_key> <Down> <parenleft>          : "₍"
+<Multi_key> <Down> <parenright>         : "₎"
+<Multi_key> <Down> <i>                  : "ᵢ"
+<Multi_key> <Down> <n>                  : "_n" # There's none!
+
+
+
+#====== Circled: Digits [ O 0 number ], [ O number number ]
+<Multi_key> <parenleft> <0> <0> <parenright>            : "⓪"
+<Multi_key> <parenleft> <0> <1> <parenright>            : "①"
+<Multi_key> <parenleft> <0> <2> <parenright>            : "②"
+<Multi_key> <parenleft> <0> <3> <parenright>            : "③"
+<Multi_key> <parenleft> <0> <4> <parenright>            : "④"
+<Multi_key> <parenleft> <0> <5> <parenright>            : "⑤"
+<Multi_key> <parenleft> <0> <6> <parenright>            : "⑥"
+<Multi_key> <parenleft> <0> <7> <parenright>            : "⑦"
+<Multi_key> <parenleft> <0> <8> <parenright>            : "⑧"
+<Multi_key> <parenleft> <0> <9> <parenright>            : "⑨"
+<Multi_key> <parenleft> <1> <0> <parenright>            : "⑩"
+<Multi_key> <parenleft> <1> <1> <parenright>            : "⑪"
+<Multi_key> <parenleft> <1> <2> <parenright>            : "⑫"
+<Multi_key> <parenleft> <1> <3> <parenright>            : "⑬"
+<Multi_key> <parenleft> <1> <4> <parenright>            : "⑭"
+<Multi_key> <parenleft> <1> <5> <parenright>            : "⑮"
+<Multi_key> <parenleft> <1> <6> <parenright>            : "⑯"
+<Multi_key> <parenleft> <1> <7> <parenright>            : "⑰"
+<Multi_key> <parenleft> <1> <8> <parenright>            : "⑱"
+<Multi_key> <parenleft> <1> <9> <parenright>            : "⑲"
+<Multi_key> <parenleft> <2> <0> <parenright>            : "⑳"
+
+
+
+#====== Circled: Letters [ O char ], [ O CHAR ]
+<Multi_key> <parenleft> <a> <parenright>                : "ⓐ"
+<Multi_key> <parenleft> <b> <parenright>                : "ⓑ"
+<Multi_key> <parenleft> <c> <parenright>                : "ⓒ"
+<Multi_key> <parenleft> <d> <parenright>                : "ⓓ"
+<Multi_key> <parenleft> <e> <parenright>                : "ⓔ"
+<Multi_key> <parenleft> <f> <parenright>                : "ⓕ"
+<Multi_key> <parenleft> <g> <parenright>                : "ⓖ"
+<Multi_key> <parenleft> <h> <parenright>                : "ⓗ"
+<Multi_key> <parenleft> <i> <parenright>                : "ⓘ"
+<Multi_key> <parenleft> <j> <parenright>                : "ⓙ"
+<Multi_key> <parenleft> <k> <parenright>                : "ⓚ"
+<Multi_key> <parenleft> <l> <parenright>                : "ⓛ"
+<Multi_key> <parenleft> <m> <parenright>                : "ⓜ"
+<Multi_key> <parenleft> <n> <parenright>                : "ⓝ"
+<Multi_key> <parenleft> <o> <parenright>                : "ⓞ"
+<Multi_key> <parenleft> <p> <parenright>                : "ⓟ"
+<Multi_key> <parenleft> <q> <parenright>                : "ⓠ"
+<Multi_key> <parenleft> <r> <parenright>                : "ⓡ"
+<Multi_key> <parenleft> <s> <parenright>                : "ⓢ"
+<Multi_key> <parenleft> <t> <parenright>                : "ⓣ"
+<Multi_key> <parenleft> <u> <parenright>                : "ⓤ"
+<Multi_key> <parenleft> <v> <parenright>                : "ⓥ"
+<Multi_key> <parenleft> <w> <parenright>                : "ⓦ"
+<Multi_key> <parenleft> <x> <parenright>                : "ⓧ"
+<Multi_key> <parenleft> <y> <parenright>                : "ⓨ"
+<Multi_key> <parenleft> <z> <parenright>                : "ⓩ"
+<Multi_key> <parenleft> <A> <parenright>                : "Ⓐ"
+<Multi_key> <parenleft> <B> <parenright>                : "Ⓑ"
+<Multi_key> <parenleft> <C> <parenright>                : "Ⓒ"
+<Multi_key> <parenleft> <D> <parenright>                : "Ⓓ"
+<Multi_key> <parenleft> <E> <parenright>                : "Ⓔ"
+<Multi_key> <parenleft> <F> <parenright>                : "Ⓕ"
+<Multi_key> <parenleft> <G> <parenright>                : "Ⓖ"
+<Multi_key> <parenleft> <H> <parenright>                : "Ⓗ"
+<Multi_key> <parenleft> <I> <parenright>                : "Ⓘ"
+<Multi_key> <parenleft> <J> <parenright>                : "Ⓙ"
+<Multi_key> <parenleft> <K> <parenright>                : "Ⓚ"
+<Multi_key> <parenleft> <L> <parenright>                : "Ⓛ"
+<Multi_key> <parenleft> <M> <parenright>                : "Ⓜ"
+<Multi_key> <parenleft> <N> <parenright>                : "Ⓝ"
+<Multi_key> <parenleft> <O> <parenright>                : "Ⓞ"
+<Multi_key> <parenleft> <P> <parenright>                : "Ⓟ"
+<Multi_key> <parenleft> <Q> <parenright>                : "Ⓠ"
+<Multi_key> <parenleft> <R> <parenright>                : "Ⓡ"
+<Multi_key> <parenleft> <S> <parenright>                : "Ⓢ"
+<Multi_key> <parenleft> <T> <parenright>                : "Ⓣ"
+<Multi_key> <parenleft> <U> <parenright>                : "Ⓤ"
+<Multi_key> <parenleft> <V> <parenright>                : "Ⓥ"
+<Multi_key> <parenleft> <W> <parenright>                : "Ⓦ"
+<Multi_key> <parenleft> <X> <parenright>                : "Ⓧ"
+<Multi_key> <parenleft> <Y> <parenright>                : "Ⓨ"
+<Multi_key> <parenleft> <Z> <parenright>                : "Ⓩ"
+
+
+
+#====== Romanian numerals: [ r number number ], [ R number number ]
+<Multi_key> <R> <0> <1>                                 : "Ⅰ"   U2160 # ROMAN NUMERAL ONE
+<Multi_key> <R> <0> <2>                                 : "Ⅱ"   U2161 # ROMAN NUMERAL TWO
+<Multi_key> <R> <0> <3>                                 : "Ⅲ"   U2162 # ROMAN NUMERAL THREE
+<Multi_key> <R> <0> <4>                                 : "Ⅳ"   U2163 # ROMAN NUMERAL FOUR
+<Multi_key> <R> <0> <5>                                 : "Ⅴ"   U2164 # ROMAN NUMERAL FIVE
+<Multi_key> <R> <0> <6>                                 : "Ⅵ"   U2165 # ROMAN NUMERAL SIX
+<Multi_key> <R> <0> <7>                                 : "Ⅶ"   U2166 # ROMAN NUMERAL SEVEN
+<Multi_key> <R> <0> <8>                                 : "Ⅷ"   U2167 # ROMAN NUMERAL EIGHT
+<Multi_key> <R> <0> <9>                                 : "Ⅸ"   U2168 # ROMAN NUMERAL NINE
+<Multi_key> <R> <1> <0>                                 : "Ⅹ"   U2169 # ROMAN NUMERAL TEN
+<Multi_key> <R> <1> <1>                                 : "Ⅺ"   U216A # ROMAN NUMERAL ELEVEN
+<Multi_key> <R> <1> <2>                                 : "Ⅻ"   U216B # ROMAN NUMERAL TWELVE
+<Multi_key> <R> <5> <0>                                 : "Ⅼ"   U216C # ROMAN NUMERAL FIFTY
+
+<Multi_key> <r> <0> <1>                                 : "ⅰ"   U2170 # SMALL ROMAN NUMERAL ONE
+<Multi_key> <r> <0> <2>                                 : "ⅱ"   U2171 # SMALL ROMAN NUMERAL TWO
+<Multi_key> <r> <0> <3>                                 : "ⅲ"   U2172 # SMALL ROMAN NUMERAL THREE
+<Multi_key> <r> <0> <4>                                 : "ⅳ"   U2173 # SMALL ROMAN NUMERAL FOUR
+<Multi_key> <r> <0> <5>                                 : "ⅴ"   U2174 # SMALL ROMAN NUMERAL FIVE
+<Multi_key> <r> <0> <6>                                 : "ⅵ"   U2175 # SMALL ROMAN NUMERAL SIX
+<Multi_key> <r> <0> <7>                                 : "ⅶ"   U2176 # SMALL ROMAN NUMERAL SEVEN
+<Multi_key> <r> <0> <8>                                 : "ⅷ"   U2177 # SMALL ROMAN NUMERAL EIGHT
+<Multi_key> <r> <0> <9>                                 : "ⅸ"   U2178 # SMALL ROMAN NUMERAL NINE
+<Multi_key> <r> <1> <0>                                 : "ⅹ"   U2179 # SMALL ROMAN NUMERAL TEN
+<Multi_key> <r> <1> <1>                                 : "ⅺ"   U217A # SMALL ROMAN NUMERAL ELEVEN
+<Multi_key> <r> <1> <2>                                 : "ⅻ"   U217B # SMALL ROMAN NUMERAL TWELVE
+<Multi_key> <r> <5> <0>                                 : "ⅼ"   U217C # SMALL ROMAN NUMERAL FIFTY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###     ====================[ KEYPAD VERSIONS ]====================
+### Generated aliases for NumPad
+###     cat ~/.XCompose | grep -E "^<.*<(plus|minus|slash|asterisk|period|[0-9])>" | sed -r "s~<([0-9])>~<KP_\1>~g" | sed -r "s~<plus>~<KP_Add>~g" | sed -r "s~<minus>~<KP_Subtract>~g" | sed -r "s~<slash>~<KP_Divide>~g" | sed -r "s~<asterisk>~<KP_Multiply>~g" | sed -r "s~<period>~<KP_Decimal>~g" >> ~/.XCompose
+###+++###
+<Multi_key> <equal> <KP_0>                                  : "✘"   U2718 # HEAVY BALLOT X
+<Multi_key> <equal> <KP_1>                                  : "✔"   U2714 # HEAVY CHECK MARK
+<Multi_key> <equal> <KP_Multiply>                           : "★"   U2605 # BLACK STAR
+<Multi_key> <KP_Divide> <c>                                 : "¢"   U00A2 # CENT SIGN
+<Multi_key> <KP_Decimal> <KP_Decimal> <KP_Decimal>                  : "…"   U2026 # HORIZONTAL ELLIPSIS
+<Multi_key> <KP_Subtract> <KP_Subtract> <KP_Decimal>                    : "–"   U2013 # EN DASH: for numbers: 1–2
+<Multi_key> <KP_Subtract> <KP_Subtract> <KP_Subtract>                   : "—"   U2014 # EM DASH: for text: "What?" — he said.
+<Multi_key> <less> <KP_3>                                   : "♥"   U2665 # BLACK HEART SUIT
+<Multi_key> <backslash> <Up> <KP_Multiply>                  : "⃰"    U20F0 # ASTERISK: ⃰
+<Multi_key> <backslash> <Up> <KP_Subtract>                  : "̅"    U0305 # OVERLINE: ̅
+<Multi_key> <backslash> <Up> <KP_2> <KP_Subtract>               : "̿"    U033F # 2xOVERLINE: ̿
+<Multi_key> <backslash> <Up> <KP_Decimal>                   : "̇"    U0307 # DOT: ̇
+<Multi_key> <backslash> <Up> <KP_2> <KP_Decimal>                : "̈"    U0308 # 2xDOT: ̈
+<Multi_key> <backslash> <Up> <KP_3> <KP_Decimal>                : "⃛"    U20DB # 3xDOT: ⃛
+<Multi_key> <backslash> <Up> <KP_4> <KP_Decimal>                : "⃜"    U20DC # 4xDOT: ⃜
+<Multi_key> <backslash> <KP_Subtract>                           : "̶"    U0336 # STROKE (STRIKE): ̶
+<Multi_key> <backslash> <KP_Divide>                         : "̸"    U0338 # OVERLAY (MISTAKE):  ̸
+<Multi_key> <backslash> <KP_2> <KP_Divide>                      : "⃫"    U20EB # DOUBLE OVERLAY (MISTAKE):  ⃫
+<Multi_key> <backslash> <Down> <KP_Subtract>                    : "̲"    U0332 # UNDERLINE: ̲
+<Multi_key> <backslash> <Down> <KP_2> <KP_Subtract>             : "̳"    U0333 # 2xUNDERLINE: ̳
+<Multi_key> <KP_Subtract> <Right> <Right>                       : "→"
+<Multi_key> <KP_Subtract> <Left> <Left>                     : "←"
+<Multi_key> <KP_Subtract> <Up> <Up>                         : "↑"
+<Multi_key> <KP_Subtract> <Down> <Down>                     : "↓"
+<Multi_key> <KP_Subtract> <Left> <Right>                        : "↔"
+<Multi_key> <KP_Subtract> <Up> <Down>                           : "↕"
+<Multi_key> <KP_Subtract> <KP_Divide> <Left> <Left>             : "↚"
+<Multi_key> <KP_Subtract> <KP_Divide> <Right> <Right>               : "↛"
+<Multi_key> <KP_Subtract> <KP_Divide> <Left> <Right>                : "↮"
+<Multi_key> <KP_Subtract> <Left> <Up>                           : "↖"
+<Multi_key> <KP_Subtract> <Left> <Down>                     : "↙"
+<Multi_key> <KP_Subtract> <Up> <Right>                      : "↗"
+<Multi_key> <KP_Subtract> <Down> <Right>                        : "↘"
+<Multi_key> <KP_Subtract> <Right>   <KP_Subtract> <Right>               : "⇉"
+<Multi_key> <KP_Subtract> <Left>    <KP_Subtract> <Left>                : "⇇"
+<Multi_key> <KP_Subtract> <Up>  <KP_Subtract> <Up>              : "⇈"
+<Multi_key> <KP_Subtract> <Down>    <KP_Subtract> <Down>                : "⇊"
+<Multi_key> <KP_Subtract> <Right>   <KP_Subtract> <Left>                : "⇄"
+<Multi_key> <KP_Subtract> <Left>    <KP_Subtract> <Right>               : "⇆"
+<Multi_key> <KP_Subtract> <Up>  <KP_Subtract> <Down>                : "⇅"
+<Multi_key> <KP_Subtract> <Down>    <KP_Subtract> <Up>              : "⇵"
+<Multi_key> <equal> <KP_Divide> <Left> <Left>               : "⇍"
+<Multi_key> <equal> <KP_Divide> <Right> <Right>             : "⇏"
+<Multi_key> <equal> <KP_Divide> <Left> <Right>              : "⇎"
+<Multi_key> <KP_Subtract> <c> <Left>                            : "⟲"   U27F2 # ANTICLOCKWISE GAPPED CIRCLE ARROW
+<Multi_key> <KP_Subtract> <c> <Right>                           : "⟳"   U27F3 # CLOCKWISE GAPPED CIRCLE ARROW
+<Multi_key> <KP_Subtract> <KP_Subtract> <Left> <Left>               : "⟵"   U27F5 # LONG LEFTWARDS ARROW
+<Multi_key> <KP_Subtract> <KP_Subtract> <Right> <Right>             : "⟶"   U27F6 # LONG RIGHTWARDS ARROW
+<Multi_key> <KP_Subtract> <KP_Subtract> <Left> <Right>              : "⟷"   U27F7 # LONG LEFT RIGHT ARROW
+<Multi_key> <bar> <KP_Subtract> <KP_Subtract> <Left> <Left>         : "⟻"   U27FB # LONG LEFTWARDS ARROW FROM BAR
+<Multi_key> <bar> <KP_Subtract> <KP_Subtract> <Right> <Right>       : "⟼"   U27FC # LONG RIGHTWARDS ARROW FROM BAR
+<Multi_key> <KP_Decimal> <KP_Multiply>                          : "·"   U00B7 # MIDDLE DOT
+<Multi_key> <KP_Add> <KP_Subtract>                              : "±"   U00B1 # PLUS-MINUS SIGN
+<Multi_key> <KP_Subtract> <KP_Add>                              : "∓"   U2213 # MINUS-OR-PLUS SIGN
+<Multi_key> <O> <KP_Add>                                    : "⊕"   U2295 # CIRCLED PLUS
+<Multi_key> <O> <KP_Subtract>                                   : "⊖"   U2296 # CIRCLED MINUS
+<Multi_key> <O> <KP_Multiply>                               : "⊗"   U2297 # CIRCLED TIMES
+<Multi_key> <O> <KP_Divide>                                 : "⊘"   U2298 # CIRCLED DIVISION SLASH
+<Multi_key> <KP_Divide> <equal>                             : "≠"   U2260 # NOT EQUAL TO
+<Multi_key> <KP_Divide> <less>                              : "≮"   U226E # NOT LESS-THAN
+<Multi_key> <KP_Divide> <greater>                           : "≯"   U226F # NOT GREATER-THAN
+<Multi_key> <KP_Divide> <asciitilde>                        : "≁"   U2241 # NOT TILDE
+<Multi_key> <equal> <KP_Divide> <asciitilde>                : "≈"   U2249 # NOT ALMOST EQUAL TO
+<Multi_key> <KP_Add> <KP_Add>                               : "∑"   U2211 # N-ARY SUMMATION
+<Multi_key> <KP_Multiply> <KP_Multiply>                     : "∏"   U220F # N-ARY PRODUCT
+<Multi_key> <Up> <KP_Divide> <KP_2>                         : "√"   U221A # SQUARE ROOT
+<Multi_key> <Up> <KP_Divide> <KP_3>                         : "∛"   U221B # CUBE ROOT
+<Multi_key> <Up> <KP_Divide> <KP_4>                         : "∜"   U221C # FOURTH ROOT
+<Multi_key> <braceleft> <KP_Divide> <o>                     : "∅"   # EMPTY SET
+<Multi_key> <braceleft> <KP_Divide> <i> <n>                 : "∉"   # NOT ELEMENT OF
+<Multi_key> <braceleft> <KP_Divide> <n> <i>                 : "∌"   # NOT CONTAINS AS MEMBER
+<Multi_key> <braceleft> <KP_Add>                            : "∪"   # UNION
+<Multi_key> <braceleft> <KP_Subtract>                           : "∖"   # MINUS
+<Multi_key> <braceleft> <KP_Multiply>                       : "∩"   # INTERSECTION
+<Multi_key> <braceleft> <KP_Divide> <parenleft>             : "⊄"   # NOT SUBSET OF
+<Multi_key> <braceleft> <KP_Divide> <parenright>            : "⊅"   # NOT SUPERSET OF
+<Multi_key> <braceleft> <KP_Divide> <equal> <parenleft>     : "⊈"   # NOT SUBSET OF AND EQUAL
+<Multi_key> <braceleft> <KP_Divide> <equal> <parenright>    : "⊉"   # NOT SUPERSET OF AND EQUAL
+<Multi_key> <KP_8> <KP_8>                                       : "∞"   # INFINITY
+<Multi_key> <KP_1> <KP_Divide> <KP_2>               : "½"
+<Multi_key> <KP_1> <KP_Divide> <KP_3>               : "⅓"
+<Multi_key> <KP_2> <KP_Divide> <KP_3>               : "⅔"
+<Multi_key> <KP_1> <KP_Divide> <KP_4>               : "¼"
+<Multi_key> <KP_3> <KP_Divide> <KP_4>               : "¾"
+<Multi_key> <KP_1> <KP_Divide> <KP_5>               : "⅕"
+<Multi_key> <KP_2> <KP_Divide> <KP_5>               : "⅖"
+<Multi_key> <KP_3> <KP_Divide> <KP_5>               : "⅗"
+<Multi_key> <KP_4> <KP_Divide> <KP_5>               : "⅘"
+<Multi_key> <KP_1> <KP_Divide> <KP_6>               : "⅙"
+<Multi_key> <KP_5> <KP_Divide> <KP_6>               : "⅚"
+<Multi_key> <KP_1> <KP_Divide> <KP_8>               : "⅛"
+<Multi_key> <KP_3> <KP_Divide> <KP_8>               : "⅜"
+<Multi_key> <KP_5> <KP_Divide> <KP_8>               : "⅝"
+<Multi_key> <KP_7> <KP_Divide> <KP_8>               : "⅞"
+<Multi_key> <Up> <KP_0>                 : "⁰"
+<Multi_key> <Up> <KP_1>                 : "¹"
+<Multi_key> <Up> <KP_2>                 : "²"
+<Multi_key> <Up> <KP_3>                 : "³"
+<Multi_key> <Up> <KP_4>                 : "⁴"
+<Multi_key> <Up> <KP_5>                 : "⁵"
+<Multi_key> <Up> <KP_6>                 : "⁶"
+<Multi_key> <Up> <KP_7>                 : "⁷"
+<Multi_key> <Up> <KP_8>                 : "⁸"
+<Multi_key> <Up> <KP_9>                 : "⁹"
+<Multi_key> <Up> <KP_Add>                   : "⁺"
+<Multi_key> <Up> <KP_Subtract>              : "⁻"
+<Multi_key> <Down> <KP_0>                   : "₀"
+<Multi_key> <Down> <KP_1>                   : "₁"
+<Multi_key> <Down> <KP_2>                   : "₂"
+<Multi_key> <Down> <KP_3>                   : "₃"
+<Multi_key> <Down> <KP_4>                   : "₄"
+<Multi_key> <Down> <KP_5>                   : "₅"
+<Multi_key> <Down> <KP_6>                   : "₆"
+<Multi_key> <Down> <KP_7>                   : "₇"
+<Multi_key> <Down> <KP_8>                   : "₈"
+<Multi_key> <Down> <KP_9>                   : "₉"
+<Multi_key> <Down> <KP_Add>             : "₊"
+<Multi_key> <Down> <KP_Subtract>                : "₋"
+<Multi_key> <parenleft> <KP_0> <KP_0> <parenright>          : "⓪"
+<Multi_key> <parenleft> <KP_0> <KP_1> <parenright>          : "①"
+<Multi_key> <parenleft> <KP_0> <KP_2> <parenright>          : "②"
+<Multi_key> <parenleft> <KP_0> <KP_3> <parenright>          : "③"
+<Multi_key> <parenleft> <KP_0> <KP_4> <parenright>          : "④"
+<Multi_key> <parenleft> <KP_0> <KP_5> <parenright>          : "⑤"
+<Multi_key> <parenleft> <KP_0> <KP_6> <parenright>          : "⑥"
+<Multi_key> <parenleft> <KP_0> <KP_7> <parenright>          : "⑦"
+<Multi_key> <parenleft> <KP_0> <KP_8> <parenright>          : "⑧"
+<Multi_key> <parenleft> <KP_0> <KP_9> <parenright>          : "⑨"
+<Multi_key> <parenleft> <KP_1> <KP_0> <parenright>          : "⑩"
+<Multi_key> <parenleft> <KP_1> <KP_1> <parenright>          : "⑪"
+<Multi_key> <parenleft> <KP_1> <KP_2> <parenright>          : "⑫"
+<Multi_key> <parenleft> <KP_1> <KP_3> <parenright>          : "⑬"
+<Multi_key> <parenleft> <KP_1> <KP_4> <parenright>          : "⑭"
+<Multi_key> <parenleft> <KP_1> <KP_5> <parenright>          : "⑮"
+<Multi_key> <parenleft> <KP_1> <KP_6> <parenright>          : "⑯"
+<Multi_key> <parenleft> <KP_1> <KP_7> <parenright>          : "⑰"
+<Multi_key> <parenleft> <KP_1> <KP_8> <parenright>          : "⑱"
+<Multi_key> <parenleft> <KP_1> <KP_9> <parenright>          : "⑲"
+<Multi_key> <parenleft> <KP_2> <KP_0> <parenright>          : "⑳"
+<Multi_key> <R> <KP_0> <KP_1>                                   : "Ⅰ"   U2160 # ROMAN NUMERAL ONE
+<Multi_key> <R> <KP_0> <KP_2>                                   : "Ⅱ"   U2161 # ROMAN NUMERAL TWO
+<Multi_key> <R> <KP_0> <KP_3>                                   : "Ⅲ"   U2162 # ROMAN NUMERAL THREE
+<Multi_key> <R> <KP_0> <KP_4>                                   : "Ⅳ"   U2163 # ROMAN NUMERAL FOUR
+<Multi_key> <R> <KP_0> <KP_5>                                   : "Ⅴ"   U2164 # ROMAN NUMERAL FIVE
+<Multi_key> <R> <KP_0> <KP_6>                                   : "Ⅵ"   U2165 # ROMAN NUMERAL SIX
+<Multi_key> <R> <KP_0> <KP_7>                                   : "Ⅶ"   U2166 # ROMAN NUMERAL SEVEN
+<Multi_key> <R> <KP_0> <KP_8>                                   : "Ⅷ"   U2167 # ROMAN NUMERAL EIGHT
+<Multi_key> <R> <KP_0> <KP_9>                                   : "Ⅸ"   U2168 # ROMAN NUMERAL NINE
+<Multi_key> <R> <KP_1> <KP_0>                                   : "Ⅹ"   U2169 # ROMAN NUMERAL TEN
+<Multi_key> <R> <KP_1> <KP_1>                                   : "Ⅺ"   U216A # ROMAN NUMERAL ELEVEN
+<Multi_key> <R> <KP_1> <KP_2>                                   : "Ⅻ"   U216B # ROMAN NUMERAL TWELVE
+<Multi_key> <R> <KP_5> <KP_0>                                   : "Ⅼ"   U216C # ROMAN NUMERAL FIFTY
+<Multi_key> <r> <KP_0> <KP_1>                                   : "ⅰ"   U2170 # SMALL ROMAN NUMERAL ONE
+<Multi_key> <r> <KP_0> <KP_2>                                   : "ⅱ"   U2171 # SMALL ROMAN NUMERAL TWO
+<Multi_key> <r> <KP_0> <KP_3>                                   : "ⅲ"   U2172 # SMALL ROMAN NUMERAL THREE
+<Multi_key> <r> <KP_0> <KP_4>                                   : "ⅳ"   U2173 # SMALL ROMAN NUMERAL FOUR
+<Multi_key> <r> <KP_0> <KP_5>                                   : "ⅴ"   U2174 # SMALL ROMAN NUMERAL FIVE
+<Multi_key> <r> <KP_0> <KP_6>                                   : "ⅵ"   U2175 # SMALL ROMAN NUMERAL SIX
+<Multi_key> <r> <KP_0> <KP_7>                                   : "ⅶ"   U2176 # SMALL ROMAN NUMERAL SEVEN
+<Multi_key> <r> <KP_0> <KP_8>                                   : "ⅷ"   U2177 # SMALL ROMAN NUMERAL EIGHT
+<Multi_key> <r> <KP_0> <KP_9>                                   : "ⅸ"   U2178 # SMALL ROMAN NUMERAL NINE
+<Multi_key> <r> <KP_1> <KP_0>                                   : "ⅹ"   U2179 # SMALL ROMAN NUMERAL TEN
+<Multi_key> <r> <KP_1> <KP_1>                                   : "ⅺ"   U217A # SMALL ROMAN NUMERAL ELEVEN
+<Multi_key> <r> <KP_1> <KP_2>                                   : "ⅻ"   U217B # SMALL ROMAN NUMERAL TWELVE
+<Multi_key> <r> <KP_5> <KP_0>                                   : "ⅼ"   U217C # SMALL ROMAN NUMERAL FIFTY

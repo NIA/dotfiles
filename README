@@ -1,0 +1,7 @@
+Some of my configuration files from $HOME
+
+Installation:
+git clone git://github.com/NIA/dotfiles.git $HOME/dotfiles
+cp $HOME/dotfiles/copy_into_home/.* $HOME/
+git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
+
