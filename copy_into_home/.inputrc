@@ -1,2 +1,2 @@
 # Invoke common options
-. $HOME/dotfiles/inputrc
+$include ~/dotfiles/inputrc
