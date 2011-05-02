@@ -3,7 +3,8 @@ Some of my configuration files from $HOME
 
 Installation:
 
-First, backup your old files!
+First, backup your old config files! To see which files to backup, look into
+copy_into_home/ folder of this project.
 
 Then clone this repo into your home dir:
 git clone git://github.com/NIA/dotfiles.git $HOME/dotfiles
@@ -13,7 +14,7 @@ Copy the files that link to those in dotfiles:
 cp $HOME/dotfiles/copy_into_home/.* $HOME/
 
 Config global gitignore:
-git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
+git config --global core.excludesfile $HOME/dotfiles/gitignore_global
 
 Add some custom config to new files in your home dir, and have fun!
 
