@@ -69,8 +69,8 @@ esac
 
 # Alias definitions.
 
-if [ -f .bash_aliases ]; then
-    . .bash_aliases
+if [ -f $HOME/.bash_aliases ]; then
+    . $HOME/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
