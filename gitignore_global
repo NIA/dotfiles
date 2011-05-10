@@ -70,3 +70,11 @@ out/*
 .idea/inspectionProfiles/*
 *.iws
 
+# LaTeX #
+#########
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
