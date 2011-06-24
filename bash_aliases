@@ -18,7 +18,6 @@ alias la='ls -A'
 
 #  apt aliases
 alias apti='sudo apt-get install'
-alias apts='apt-cache search'
 alias aptd='sudo apt-get update'
 alias aptg='sudo apt-get upgrade'
 #  gem
@@ -43,3 +42,11 @@ alias leed='gvim $LEDGER_FILE'
 #  other
 alias o='xdg-open'
 alias wget='wget --no-check-certificate' # workaround wget bug, see https://github.com/blog/738-sidejack-prevention-phase-2-ssl-everywhere#comment-9002
+
+# -- FUNCTIONS --
+# TODO: separate file
+
+# apts with filtering
+apts() {
+  apt-cache search $1 | ack $1
+}
