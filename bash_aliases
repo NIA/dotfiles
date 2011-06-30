@@ -35,8 +35,7 @@ alias gull='git pull'
 alias ggui='git gui&'
 alias gco='git checkout'
 alias gst='git status'
-alias gitk='gitk&'
-alias gitka='gitk --all'
+alias gitka='gitk --all&'
 #  ledger
 alias leed='gvim $LEDGER_FILE'
 #  other
