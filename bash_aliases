@@ -62,6 +62,6 @@ sdi() {
   svn diff $* | colordiff | less -R
 }
 slo() {
-  svn diff $* | colordiff | less -R
+  svn log $* | colordiff | less -R
 }
 
