@@ -36,8 +36,12 @@ alias ggui='git gui&'
 alias gco='git checkout'
 alias gst='git status'
 alias gitka='gitk --all&'
+alias gdi='git diff'
 alias glo='git log'
 alias gfe='git fetch'
+#  svn
+alias sup='svn update'
+alias sst='svn status | ack "^[^?]"'
 #  ledger
 alias leed='gvim $LEDGER_FILE'
 #  other
@@ -51,3 +55,12 @@ alias wget='wget --no-check-certificate' # workaround wget bug, see https://gith
 apts() {
   apt-cache search $1 | ack $1
 }
+
+# svn
+sdi() {
+  svn diff $* | colordiff | less -R
+}
+slo() {
+  svn diff $* | colordiff | less -R
+}
+
