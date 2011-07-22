@@ -41,7 +41,8 @@ alias glo='git log'
 alias gfe='git fetch'
 #  svn
 alias sup='svn update'
-alias sst='svn status | ack "^[^?]"'
+# TODO ignoring Makefile system-wide is a Bad Thing. This should be done only for Qt projects.
+alias sst='svn status | ack -v "Makefile|(_tmp|pro.user|/_?debug|/_?release)$"'
 #  ledger
 alias leed='gvim $LEDGER_FILE'
 #  other
