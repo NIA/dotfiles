@@ -111,3 +111,4 @@ else
   start_agent;
 fi
 
+set -o vi
