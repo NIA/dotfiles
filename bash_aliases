@@ -53,7 +53,7 @@ alias wget='wget --no-check-certificate' # workaround wget bug, see https://gith
 
 # apts with filtering
 apts() {
-  apt-cache search $1 | ack $1
+  apt-cache search $* | ack "$(echo $*|sed 's/\s\+/|/g')"
 }
 
 # svn
