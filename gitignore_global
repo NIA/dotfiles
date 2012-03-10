@@ -7,6 +7,7 @@
 *.exe
 *.o
 *.so
+*.so.*
 *.pyc
 
 # Packages #
@@ -77,3 +78,5 @@ out/*
 *.blg
 *.out
 *.toc
+
+.svn/
