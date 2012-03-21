@@ -11,7 +11,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -A'
 
 # my aliases
@@ -36,8 +36,8 @@ alias ggui='git gui&'
 alias gco='git checkout'
 alias gst='git status'
 alias gitka='gitk --all&'
-alias gdi='git diff'
-alias glo='git log'
+alias gdi='git diff --color'
+alias glo='git log --color'
 alias gfe='git fetch'
 #  svn
 alias sup='svn update'
