@@ -1,2 +1,2 @@
 # Invoke common options
-include "$HOME/dotfiles/XCompose"
+include "%H/dotfiles/XCompose"
