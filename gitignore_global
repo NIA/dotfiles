@@ -87,4 +87,5 @@ out/*
 # Qt #
 ######
 *.qm
+*.autosave
 
