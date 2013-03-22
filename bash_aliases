@@ -38,6 +38,7 @@ alias gst='git status'
 alias gitka='gitk --all&'
 alias gdi='git diff --color'
 alias glo='git log --color'
+alias gro='git reflog --date=local --color'
 alias gfe='git fetch'
 #  svn
 alias sup='svn update'
