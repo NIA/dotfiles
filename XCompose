@@ -89,6 +89,7 @@
 <Multi_key> <minus> <minus> <minus>                     : "—"   U2014 # EM DASH: for text: "What?" — he said.
 
 <Multi_key> <tab> <tab>                                 : " "   U0009 # HORIZONTAL TABULATION
+<Multi_key> <space> <space>      	                      : " "   nobreakspace # NO-BREAK SPACE
 
 #====== Smileys & Co
 <Multi_key> <less> <3>                                  : "♥"   U2665 # BLACK HEART SUIT
@@ -240,6 +241,7 @@
 
 #====== Arithmetic Operators
 <Multi_key> <period> <asterisk>                         : "·"   U00B7 # MIDDLE DOT
+<Multi_key> <period> <x>                                : "×"   U00D7 # MULTIPLICATION SIGN
 
 <Multi_key> <plus> <minus>                              : "±"   U00B1 # PLUS-MINUS SIGN
 <Multi_key> <minus> <plus>                              : "∓"   U2213 # MINUS-OR-PLUS SIGN
@@ -249,6 +251,9 @@
 <Multi_key> <O> <asterisk>                              : "⊗"   U2297 # CIRCLED TIMES
 <Multi_key> <O> <slash>                                 : "⊘"   U2298 # CIRCLED DIVISION SLASH
 <Multi_key> <O> <equal>                                 : "⊜"   U229B # CIRCLED ASTERISK OPERATOR
+
+<Multi_key> <colon> <minus>                             : "÷"   U00F7 # DIVISION SIGN
+<Multi_key> <minus> <colon>                             : "÷"   U00F7 # DIVISION SIGN
 
 <Multi_key> <colon> <equal>                             : "≔"   U2254 # COLON EQUALS
 <Multi_key> <equal> <colon>                             : "≕"   U2255 # EQUALS COLON
