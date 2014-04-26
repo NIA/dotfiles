@@ -18,6 +18,7 @@ git config --global core.excludesfile $HOME/dotfiles/gitignore_global
 
 If you want your .XCompose to work, check out these instructions on setting
 default system input mode to XIM: https://wiki.edubuntu.org/ComposeKey
+You may need to `apt-get install im-switch` if it is not installed by default.
 
 Add some custom config to new files in your home dir, and have fun!
 
