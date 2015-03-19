@@ -58,6 +58,36 @@ apts() {
   apt-cache search $* | ack "$(echo $*|sed 's/\s\+/|/g')"
 }
 
+# whichpkg: which package installed this command? (Detects builtins and follows symlinks)
+# Usage examples:
+#
+# nia$ whichpkg vim
+# vim-gtk: /usr/bin/vim.gtk
+#
+# nia$ whichpkg type
+# type встроена в оболочку
+#
+# nia$ whichpkg ll
+# ll является алиасом для `ls -lh'
+#
+# nia$ whichpkg foobarbaz
+# No such command: foobarbaz
+whichpkg() {
+  the_type=$(type -t $1)
+  if [[ -z $the_type ]]; then
+    echo No such command: $1
+  elif [[ "file" == $the_type ]]; then
+    # readlink -f: Follow all symlinks till the end
+    dpkg -S $(readlink -f $(type -p $1)) # NB: avoid `which` in favor of `type -p`! http://stackoverflow.com/a/677212/693538
+  else
+    # else (if it is not a file) just print the full `type` message, it is informative
+    type $1
+  fi
+}
+
+# man on bash builtin
+bashman () { man bash | less -p "^       $1 "; }
+
 # svn
 sdi() {
   svn diff $* | colordiff | less -R
