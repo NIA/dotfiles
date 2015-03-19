@@ -17,9 +17,9 @@ alias la='ls -A'
 # my aliases
 
 #  apt aliases
-alias apti='sudo apt-get install'
-alias aptd='sudo apt-get update'
-alias aptg='sudo apt-get upgrade'
+alias apti='sudo apt install'
+alias aptd='sudo apt update'
+alias aptg='sudo apt upgrade'
 #  gem
 alias gi="sudo gem install"
 alias gu="sudo gem update"
