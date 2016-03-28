@@ -37,7 +37,7 @@ alias gco='git checkout'
 alias gst='git status'
 alias gitka='gitk --all&'
 alias gdi='git diff --color'
-alias glo='git log --color'
+alias glo='git log --color --graph --decorate'
 alias gro='git reflog --date=local --color'
 alias gfe='git fetch'
 #  svn
