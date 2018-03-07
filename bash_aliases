@@ -32,6 +32,8 @@ alias sc='script/console'
 #  git
 alias gush='git push'
 alias gull='git pull'
+alias gspush='git subtree push'
+alias gspull='git subtree pull'
 alias ggui='git gui&'
 alias gco='git checkout'
 alias gst='git status'
