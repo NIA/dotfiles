@@ -59,6 +59,14 @@ doc/tags
 *.bak
 *.cache
 *.ilk
+# New for VS2012:
+*.opensdf
+*.sdf
+# Graphic Diagnostics files
+*.vsglog
+# Performance analysis files
+*.psess
+*.vsp
 
 # IntelliJ IDEA #
 #################
