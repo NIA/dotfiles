@@ -13,22 +13,38 @@ fi
 # some more ls aliases
 alias ll='ls -lh'
 alias la='ls -A'
+alias lla='ls -lah'
 
 # my aliases
 
 #  apt aliases
 alias apti='sudo apt install'
+# WARNING! Disable or change alias below for Ubuntu desktop systems - 'cos there are AptDaemon daemon with 'aptd' name
 alias aptd='sudo apt update'
 alias aptg='sudo apt upgrade'
+alias aptfu='sudo apt full-upgrade'
+alias aptac='sudo apt autoclean'
+alias aptar='sudo apt autoremove'
+# CentOS <=8 yum aliases
+#alias yumi='yum install'
+#alias yumu='yum update'
+#alias yumug='yum upgrade'
+#alias yumcu='yum check-update'
+#alias yumca='yum clean all'
+#alias yumcc='yum clean cache'
+#CentOS 8 dnf alias (same as yum)
+#alias dnfi='dnf install'
+#alias dnfu='dnf update'
+#alias dnfug='dnf upgrade'
+#alias dnfcu='dnf check-update'
+#alias dnfca='dnf clean all'
+#alias dnfcc='dnf clean cache'
 #  gem
 alias gi="sudo gem install"
 alias gu="sudo gem update"
 #  ack-grep
 alias ack='ack-grep'
 alias ackrb='ack --type-add ruby=.erb,.haml'
-#  rails
-alias ss='script/server'
-alias sc='script/console'
 #  git
 alias gush='git push'
 alias gull='git pull'
