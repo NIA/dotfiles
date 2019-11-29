@@ -18,17 +18,18 @@ alias la='ls -A'
 
 #  apt aliases
 alias apti='sudo apt install'
+# WARNING! Disable or change alias below for Ubuntu desktop systems - 'cos there are AptDaemon daemon with 'aptd' name
 alias aptd='sudo apt update'
 alias aptg='sudo apt upgrade'
+alias aptfu='sudo apt full-upgrade'
+alias aptac='sudo apt autoclean'
+alias aptar='sudo apt autoremove'
 #  gem
 alias gi="sudo gem install"
 alias gu="sudo gem update"
 #  ack-grep
 alias ack='ack-grep'
 alias ackrb='ack --type-add ruby=.erb,.haml'
-#  rails
-alias ss='script/server'
-alias sc='script/console'
 #  git
 alias gush='git push'
 alias gull='git pull'
