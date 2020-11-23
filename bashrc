@@ -119,3 +119,5 @@ bind -m vi-insert "\C-l.":clear-screen
 bind -m vi-insert "\C-a.":beginning-of-line
 bind -m vi-insert "\C-e.":end-of-line
 bind -m vi-insert "\C-w.":backward-kill-word
+bind '"\e[1;5D" backward-word'
+bind '"\e[1;5C" forward-word'
