@@ -58,6 +58,8 @@ alias gdi='git diff --color'
 alias glo='git log --color --graph --decorate'
 alias gro='git reflog --date=local --color'
 alias gfe='git fetch'
+alias gff='git pull --ff-only'
+alias grs='git restore **/*.spriteatlas'
 #  svn
 alias sup='svn update'
 # TODO ignoring Makefile system-wide is a Bad Thing. This should be done only for Qt projects.
